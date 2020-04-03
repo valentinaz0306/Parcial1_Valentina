@@ -1,0 +1,17 @@
+package model;
+
+public class Categoria {
+	
+	private String movie;
+	private String serie;
+	
+	public Categoria (String movie,String serie) {
+
+		this.movie=movie;	
+		this.serie=serie;	
+
+	
+	}
+	
+	
+}

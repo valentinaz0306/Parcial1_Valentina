@@ -1,0 +1,6 @@
+BreakingBad,2008,96,serie
+Dark,2017,96,serie
+TheIrishman,2019,84,movie
+Ozark,2017,93,serie
+StarTrek,2017,88,serie
+Mindhunter,2017,95,serie

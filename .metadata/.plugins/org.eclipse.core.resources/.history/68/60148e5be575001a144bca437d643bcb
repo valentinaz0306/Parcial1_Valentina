@@ -1,0 +1,65 @@
+package model;
+
+public class Netflix {
+	
+	private String año;
+	private String movie;
+	private String serie;
+	private String reating;
+	private String nombre;
+
+	public Netflix(String nombre,String año,String reating,String serie, String movie) {
+		this.año=año;	
+		this.movie=movie;	
+		this.serie=serie;	
+		this.reating=reating;	
+		this.nombre=nombre;	
+	
+}
+
+	public String getAño() {
+		return año;
+	}
+
+	public void setAño(String año) {
+		this.año = año;
+	}
+
+	public String getMovie() {
+		return movie;
+	}
+
+	public void setMovie(String movie) {
+		this.movie = movie;
+	}
+
+	public String getSerie() {
+		return serie;
+	}
+
+	public void setSerie(String serie) {
+		this.serie = serie;
+	}
+
+	public String getReating() {
+		return reating;
+	}
+
+	public void setReating(String reating) {
+		this.reating = reating;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}	
+	
+	
+	
+	
+	
+
+}

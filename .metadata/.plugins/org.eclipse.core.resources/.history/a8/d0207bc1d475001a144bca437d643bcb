@@ -1,0 +1,50 @@
+package view;
+import processing.core.PApplet;
+//import model.Perro;
+//import model.CompareNombre;
+//import model.CompareId;
+//import model.CompareEdad;
+//import model.CompareRaza;
+//import model.CompareFecha;
+import java.util.LinkedList;
+//import java.io.File;
+//import java.io.FileNotFoundException;
+//import java.io.PrintWriter;
+import java.util.Collections;
+
+import controller.ControllerMain;
+
+public class Main extends PApplet {
+	
+	private ControllerMain controller;
+	
+	public static void main(String[] args) {
+		PApplet.main("view.Main");
+	}
+	
+	public void settings() {
+		size(800, 800);
+
+	}
+
+	public void setup() {
+	controller = new ControllerMain();
+		
+	}
+	
+	public void draw() {
+		
+		background(0);	
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}//cierra main

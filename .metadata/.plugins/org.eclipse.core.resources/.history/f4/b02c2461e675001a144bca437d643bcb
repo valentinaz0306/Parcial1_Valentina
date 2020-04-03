@@ -1,0 +1,30 @@
+package model;
+
+import java.util.Comparator;
+
+public class  Categoria implements Comparator<Netflix> {
+   
+	@Override
+    public int compare(CompareC n1, CompareC  n2) {
+    	return n1.getMovie().compareTo(n2.getSerie());
+    }
+}
+
+
+
+
+
+public class Categoria {
+	
+	private String movie;
+	private String serie;
+	
+	public Categoria (String movie,String serie) {
+
+		this.movie=movie;	
+		this.serie=serie;	
+	
+	}
+	
+	
+}

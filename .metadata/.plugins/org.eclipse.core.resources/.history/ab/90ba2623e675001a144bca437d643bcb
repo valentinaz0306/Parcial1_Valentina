@@ -1,0 +1,16 @@
+package model;
+
+public class CompareC {
+
+	private String movie;
+	private String serie;
+	
+	public CompareC (String movie,String serie) {
+
+		this.movie=movie;	
+		this.serie=serie;	
+
+	
+	
+	}	
+}

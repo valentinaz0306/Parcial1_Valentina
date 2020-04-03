@@ -1,0 +1,82 @@
+package view;
+import processing.core.PApplet;
+import model.Netflix;
+import model.Categoria;
+//import model.CompareId;
+//import model.CompareEdad;
+//import model.CompareRaza;
+//import model.CompareFecha;
+import java.util.LinkedList;
+//import java.io.File;
+//import java.io.FileNotFoundException;
+//import java.io.PrintWriter;
+import java.util.Collections;
+
+import controller.ControllerMain;
+
+public class Main extends PApplet {
+	
+	private ControllerMain controller;
+	
+	//txt
+		String[]listaPalabras1, listP1;
+	//lista 
+	private LinkedList<Netflix> listaPeli;
+	
+	public static void main(String[] args) {
+		PApplet.main("view.Main");
+	}
+	
+	public void settings() {
+		size(800, 800);
+
+	}
+
+	public void setup() {
+	controller = new ControllerMain();
+	
+	//cargar txt
+	
+		listaPalabras1= loadStrings("texto/netflix.txt");
+		
+		for (int i=0;i<listaPalabras1.length;i++) {
+			
+			listP1 = listaPalabras1[i].split(",");
+			String reating= listP1[3];
+		}
+		
+		//split palabras en la mismalinea 
+		listP1 = listaPalabras1[0].split(",");
+		//lista
+		listaPeli= new LinkedList<Netflix>();
+		
+		//arreglo para recorrer las posiicones del txt
+		
+		for (int i=0;i<listaPalabras1.length;i++) {
+			
+			listP1 = listaPalabras1[i].split(",");
+			String reating= listP1[0];
+		}
+	
+	
+	}
+	
+	public void draw() {
+		
+		background(0);	
+		
+	}
+
+	
+	
+	public void keyPressed() {
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}//cierra main

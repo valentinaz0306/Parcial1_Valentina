@@ -1,0 +1,25 @@
+package model;
+
+public class Netflix {
+	
+	private String año;
+	private String movie;
+	private String serie;
+	private String reating;
+	private String nombre;
+
+	public Netflix(String nombre,String año,String reating,String serie, String movie) {
+		this.año=año;	
+		this.movie=movie;	
+		this.serie=serie;	
+		this.reating=reating;	
+		this.nombre=nombre;	
+	
+}	
+	
+	
+	
+	
+	
+
+}
