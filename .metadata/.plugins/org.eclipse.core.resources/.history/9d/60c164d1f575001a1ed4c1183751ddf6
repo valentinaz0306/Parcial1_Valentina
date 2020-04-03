@@ -11,7 +11,8 @@ import controller.ControllerMain;
 
 public class Main extends PApplet {
 
-	PImage[] imagenes;
+	PImage breakingbad;
+	PImage dark;
 	PImage mindhunter;
 	PImage ozark;
 	PImage startrek;
@@ -38,13 +39,13 @@ public class Main extends PApplet {
 		controller = new ControllerMain();
 
 		// imagenes pantalla
-		imagenes[0] = loadImage("images/breakingbad.jpg");
-		imagenes[1] = loadImage("images/dark.jpg");
-		imagenes[2] = loadImage("images/mindhunter.jpg");
-		imagenes[3] = loadImage("images/ozark.jpg");
-		imagenes[4] = loadImage("images/startrek.jpg");
-		imagenes[5] = loadImage("images/strangerthings.jpg");
-		imagenes[6] = loadImage("images/theirishman.jpg");
+		breakingbad = loadImage("images/breakingbad.jpg");
+		dark = loadImage("images/darkjpg");
+		mindhunter = loadImage("images/mindhunter.jpg");
+		ozark = loadImage("images/ozark.jpg");
+		startrek = loadImage("images/startrek.jpg");
+		strangerthings = loadImage("images/strangerthings.jpg");
+		theirishman = loadImage("images/theirishman.jpg");
 
 		// cargar txt
 
@@ -67,12 +68,12 @@ public class Main extends PApplet {
 	public void draw() {
 
 		background(0);
-	
+		
+
 		for (int i = 0; i < listaPeli.size(); i++) {
 
 			fill(255);
 			ellipse(200, 100 + i * 50, 50, 50);
-			//image(imagenes[i],200,100+i*65,60,60);
 
 			Netflix n = listaPeli.get(i);
 			// concatenar cadenas de texto

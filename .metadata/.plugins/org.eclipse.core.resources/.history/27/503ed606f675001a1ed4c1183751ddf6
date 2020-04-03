@@ -67,12 +67,11 @@ public class Main extends PApplet {
 	public void draw() {
 
 		background(0);
-	
+		
+
 		for (int i = 0; i < listaPeli.size(); i++) {
 
-			fill(255);
-			ellipse(200, 100 + i * 50, 50, 50);
-			//image(imagenes[i],200,100+i*65,60,60);
+			image(imagenes[i],200,100+i*65,60,60);
 
 			Netflix n = listaPeli.get(i);
 			// concatenar cadenas de texto
